@@ -48,26 +48,41 @@ orange claire: #ff6541
 orange sambre: #a94d3a
 */
 
+:root {
+    --gray-1: #c9cacc;
+    --gray-2: #4b4d54;
+    --gray-2b: #32343a;
+    --gray-3:  #27292f;
+    --gray-4: #23252b;
+    
+    --orange-1: #ff6541;
+    --orange-2: #a94d3a;
+  }
 @font-face {
     src: url('../fonts/MyriadPro-Regular.otf');
     font-family:  "myriad";
+}
+@font-face {
+    src: url('../fonts/MyriadPro-Bold.otf');
+    font-family:  "myriad-bold";
 }
 *{
     font-family:  "myriad";
 }
 .btn{
     border-radius: 1px ;
-    border: solid 1px #4b4d54;
+    border: solid 1px var(--gray-2);
     text-transform: none!important;
     box-shadow: unset !important;
     font-size: 10pt;
     padding: 5pt 30pt !important;
+    background-color: var(--gray-4); 
 }
 .btn:hover{
-    border-color: #ff6541!important;
+    border-color: var(--ornge-1)!important;
 }
 .txt-org{
-color: #ff6541;
+color: var(--ornge-1);
 }
 .b{
     font-weight: bold;
@@ -76,7 +91,7 @@ color: #ff6541;
     width: 100%;
 }
 .txt{
-    color: #c9cacc;
+    color: var(--gray-1);
 }
 nav > .col-lg-1{
     max-width: 5.333333%!important;
@@ -91,7 +106,7 @@ nav > .col-lg-1{
     height: 100% !important;
     font-size: 0.81rem!important;
     box-shadow: none!important;
-    color: #4b4d54 !important;
+    color: var(--gray-2) !important;
     padding-left: 33px;
     padding-top: 1px;
     padding-bottom: 2px;
@@ -107,7 +122,7 @@ nav > .col-lg-1{
 }
 .icon{
     width: 21px;
-    color: #4b4d54;
+    color: var(--gray-2);
 }
 .navbar .col-lg-2{
     max-width: 12.666667% !important;
@@ -131,23 +146,22 @@ nav .col-lg-2:last-child{
 .body-content-top{
     padding: 0;
 }
-.body-content-top .head{
-    background-color: #23252b;
-    padding: 33pt;
+.body-content-top{
+    background-color: var(--gray-3);
 }
 ::placeholder{
-color: #c9cacc;
+color: var(--gray-1);
 opacity: 1;
 }
 .right-bar{
     padding: 0;
-    background-color: #27292f;
+    background-color: var(--gray-3);
     box-shadow: -2px 3px 9px black;
 }
 .right-bar .search{
     margin-top: 25pt;
     width: 100%;
-    background-color: #32343a;
+    background-color: var(--gray-2b);
     padding-left: 16pt;
     padding-right: 4pt;
     display: flex;
@@ -165,10 +179,42 @@ box-shadow: unset;
 .right-bar .content{
     padding: 29pt;
 }
+.right-bar .large{
+    width: 100% !important;
+    font-size: 28pt;
+    padding: 0px !important;
+    font-family: "myriad";
+    line-height: 1.1;
+}
+.right-bar .lecteur-item{
+    margin-top: 20pt;
+    line-height: 4pt;
+    border-bottom: solid 1px var(--gray-2);
+    padding-bottom: 7pt;
+}
 
+.lecteur-item b{
+    font-weight: bold;
+    font-family: "myriad-bold";
+    color: var(--gray-1);
+}
 .body{
     display: flex;
-}.show{
+}
+
+.body-content-top .head{
+        border-bottom: solid 1px var(--gray-2);
+        padding: 25pt;
+}
+.body-content-top .center{
+    padding: 25pt;
+    background: url(../images/bg.jpg);
+}
+
+.dataTables_wrapper{
+    width: 100%;
+}
+.show{
     display: block !important;
 }
 #example_wrapper #example_length,#example_wrapper #example_filter{
@@ -182,5 +228,19 @@ table.dataTable tbody tr {
     padding-right: 2%;
 }
 .my-table{
-    width: 100%;
+    color: #c0c0c2;
+}
+.my-table thead{
+    color: var(--gray-1);
+    font-family: myriad-bold;
+    font-size: 11pt;
+}
+table.dataTable thead th, table.dataTable thead td {
+     border-bottom: unset !important; 
+}
+.my-table tr :hover{
+    color: var(--orange-1) !important;
+}
+.orange{
+    color: var(--orange-1);
 }

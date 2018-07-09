@@ -16,15 +16,15 @@ require 'top-menu.html';
             <div class="col-lg-8">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-outline-primary ">
-                        <input type="checkbox" checked="" autocomplete="off"> Active
+                        <input type="checkbox" checked="" autocomplete="off"> Récente
                     </label>
                     <label class="btn btn-outline-primary active">
-                        <input type="checkbox" autocomplete="off"> Check
+                        <input type="checkbox" autocomplete="off"> Alertes
                     </label>
                 </div>
             </div>
             <div class="col-lg-4">
-                <button class="btn btn-outline-primary">modifier</button>
+                <button class="btn btn-outline-primary">Modifier</button>
                 <img src="assets/icons/doznloqd.png" alt="">
             </div>
         </div>
