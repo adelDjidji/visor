@@ -3,15 +3,7 @@
 require 'head.html';
 
 require 'top-menu.html';
-/*
-error_reporting(E_WARNING & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT);
 
-ini_set('error_reporting', E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT &~E_WARNING);
-
-echo E_DEPRECATED.", ".E_STRICT ;//& ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
-
-
-phpinfo();*/
 ?>
 
 
@@ -38,7 +30,7 @@ phpinfo();*/
         </div>
         <!-- /fin .row head -->
         <div class="row center">
-        <table id="example" class="hover" style="width:100%">
+        <table id="example" class="hover my-table" style="width:100%">
         <thead>
             <tr>
                 <th>Name</th>
@@ -519,6 +511,23 @@ phpinfo();*/
         <i class="fas fa-search"></i>
         <input class="ronded-input" type="text" placeholder="recherche" name="recherche_inner" id="">
     </div>
+
+    <div class="content">
+            <button class="btn btn-outline-primary large">+</button>
+
+            <div class="lecteur-item">
+               <p> <b>Lecteur 34 </b></p>
+                <p>Jogn smmlith</p>
+            </div>
+            <div class="lecteur-item">
+               <p> <b>Lecteur 34 </b></p>
+                <p>Jogn smmlith</p>
+            </div>
+            <div class="lecteur-item">
+               <p> <b>Lecteur 34 </b></p>
+                <p>Jogn smmlith</p>
+            </div>
+    </div>  
     
 </div>
 <!-- /fin .right-bar -->
