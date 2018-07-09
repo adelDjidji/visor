@@ -53,7 +53,7 @@ orange sambre: #a94d3a
     border: solid 1px #4b4d54;
     text-transform: none!important;
     box-shadow: unset !important;
-
+    font-size: 10pt;
     padding: 5pt 30pt !important;
 }
 .btn:hover{
@@ -121,7 +121,10 @@ nav .col-lg-2:last-child{
     max-width: 5.33%;
 }
 
-.body-content{
+.body-content-top{
+    padding: 0;
+}
+.body-content-top .head{
     background-color: #23252b;
     padding: 33pt;
 }
@@ -131,7 +134,6 @@ opacity: 1;
 }
 .right-bar{
     padding: 0;
-    height: 100%;
     background-color: #27292f;
     box-shadow: -2px 3px 9px black;
 }
@@ -155,4 +157,16 @@ box-shadow: unset;
 }
 .body{
     display: flex;
+}.show{
+    display: block !important;
+}
+#example_wrapper #example_length,#example_wrapper #example_filter{
+    display: none !important;
+}
+table.dataTable tbody tr {
+    background-color: transparent !important;
+}
+#example_wraper{
+    width: 100%;
+    padding-right: 2%;
 }
