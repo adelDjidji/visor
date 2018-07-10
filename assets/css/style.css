@@ -123,6 +123,7 @@ nav > .col-lg-1{
 .icon{
     width: 21px;
     color: var(--gray-2);
+    margin-right: 7pt;
 }
 .navbar .col-lg-2{
     max-width: 12.666667% !important;
@@ -246,4 +247,7 @@ table.dataTable thead th, table.dataTable thead td {
 }
 .orange{
     color: var(--orange-1);
+}
+.orange-icon{
+    filter: invert(.5) sepia(1) saturate(29) hue-rotate(350deg);
 }

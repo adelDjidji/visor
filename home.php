@@ -5,7 +5,9 @@ require 'head.html';
 require 'top-menu.html';
 
 ?>
-
+<script>
+    index_menu =0;
+</script>
 
 <div class="body">
 
@@ -25,7 +27,7 @@ require 'top-menu.html';
             </div>
             <div class="col-lg-4">
                 <button class="btn btn-outline-primary">Modifier</button>
-                <img src="assets/icons/doznloqd.png" alt="">
+                <img src="assets/icons/doznloqd.svg" alt="">
             </div>
         </div>
         <!-- /fin .row head -->
@@ -536,19 +538,7 @@ require 'top-menu.html';
 
 
 
-<!-- Les script javasript -->
-<script src="assets/js/jquery-3.3.1.js"></script>
-<script src="assets/js/jquery.dataTables.min.js"></script>
 
-<script src="assets/js/script.js"></script>
-
-
-
-<script>
-
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-</script>
-</body>
-</html>
+<?php
+include 'footer.html';
+?>
