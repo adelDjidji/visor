@@ -79,10 +79,10 @@ orange sambre: #a94d3a
     background-color: var(--gray-4); 
 }
 .btn:hover{
-    border-color: var(--ornge-1)!important;
+    border-color: var(--orange-1)!important;
 }
 .txt-org{
-color: var(--ornge-1);
+color: var(--orange-1);
 }
 .b{
     font-weight: bold;
@@ -239,7 +239,10 @@ table.dataTable thead th, table.dataTable thead td {
      border-bottom: unset !important; 
 }
 .my-table tr :hover{
-    color: var(--orange-1) !important;
+    background-color: var(--orange-1) !important;
+}
+.my-table th:first-child{
+    width: 1px !important;
 }
 .orange{
     color: var(--orange-1);

@@ -33,7 +33,7 @@ require 'top-menu.html';
         <table id="example" class="hover my-table" style="width:100%">
         <thead>
             <tr>
-                <th>Name</th>
+                <th></th>
                 <th>Position</th>
                 <th>Office</th>
                 <th>Age</th>
@@ -43,7 +43,7 @@ require 'top-menu.html';
         </thead>
         <tbody>
             <tr>
-                <td>Tiger Nixon</td>
+                <td>1</td>
                 <td>System Architect</td>
                 <td>Edinburgh</td>
                 <td>61</td>
@@ -51,7 +51,7 @@ require 'top-menu.html';
                 <td>$320,800</td>
             </tr>
             <tr>
-                <td>Garrett Winters</td>
+                <td>1</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                 <td>63</td>
@@ -59,7 +59,7 @@ require 'top-menu.html';
                 <td>$170,750</td>
             </tr>
             <tr>
-                <td>Ashton Cox</td>
+                <td>1</td>
                 <td>Junior Technical Author</td>
                 <td>San Francisco</td>
                 <td>66</td>
@@ -67,7 +67,7 @@ require 'top-menu.html';
                 <td>$86,000</td>
             </tr>
             <tr>
-                <td>Cedric Kelly</td>
+                <td>1</td>
                 <td>Senior Javascript Developer</td>
                 <td>Edinburgh</td>
                 <td>22</td>
@@ -75,7 +75,7 @@ require 'top-menu.html';
                 <td>$433,060</td>
             </tr>
             <tr>
-                <td>Airi Satou</td>
+                <td>1</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                 <td>33</td>
@@ -83,7 +83,7 @@ require 'top-menu.html';
                 <td>$162,700</td>
             </tr>
             <tr>
-                <td>Brielle Williamson</td>
+                <td>1</td>
                 <td>Integration Specialist</td>
                 <td>New York</td>
                 <td>61</td>
@@ -91,7 +91,7 @@ require 'top-menu.html';
                 <td>$372,000</td>
             </tr>
             <tr>
-                <td>Herrod Chandler</td>
+                <td>2</td>
                 <td>Sales Assistant</td>
                 <td>San Francisco</td>
                 <td>59</td>
@@ -99,7 +99,7 @@ require 'top-menu.html';
                 <td>$137,500</td>
             </tr>
             <tr>
-                <td>Rhona Davidson</td>
+                <td>2</td>
                 <td>Integration Specialist</td>
                 <td>Tokyo</td>
                 <td>55</td>
@@ -107,7 +107,7 @@ require 'top-menu.html';
                 <td>$327,900</td>
             </tr>
             <tr>
-                <td>Colleen Hurst</td>
+                <td>2</td>
                 <td>Javascript Developer</td>
                 <td>San Francisco</td>
                 <td>39</td>
@@ -115,7 +115,7 @@ require 'top-menu.html';
                 <td>$205,500</td>
             </tr>
             <tr>
-                <td>Sonya Frost</td>
+                <td>2</td>
                 <td>Software Engineer</td>
                 <td>Edinburgh</td>
                 <td>23</td>
