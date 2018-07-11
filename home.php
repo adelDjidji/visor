@@ -46,9 +46,9 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
 
-    <div class="col-lg-9 body-content-top">
+    <div class="col-lg-9 col-sm-8 body-content-top">
         <div class="row head">
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-sm-8">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-outline-primary ">
                         <input type="checkbox" checked="" autocomplete="off"> Récente
@@ -58,8 +58,9 @@ x.addListener(myFunction) // Attach listener function on state changes
                     </label>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <button class="btn btn-outline-primary sm-hid">Modifier</button>
+            <div class="col-lg-4 col-sm-4">
+                <button class="btn btn-outline-primary sm-hid">
+                Modifier</button>
                 <img class="orange-icon download" src="assets/icons/doznloqd.svg" alt="">
             </div>
         </div>
@@ -71,10 +72,10 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <th></th>
                 <th>Date</th>
                 <th>Nature</th>
-                <th>Lecteur</th>
-                <th>Identifiant</th>
-                <th>Nom</th>
-                <th>Prenom</th>
+                <th class="sm-hid">Lecteur</th>
+                <th class="sm-hid">Identifiant</th>
+                <th class="sm-hid">Nom</th>
+                <th class="sm-hid">Prenom</th>
             </tr>
         </thead>
         <tbody>
@@ -82,137 +83,165 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655221</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655221</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655307</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655307</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655321</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>2011/2/25 - 14:20:00</td>
+                <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>6532221</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>2011/04/25 - 2:20:00</td>
+                <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>65532228</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>2011/04/25 - 11:20:00</td>
+                <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>655374</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>2011/04/15 - 14:20:00</td>
+                <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>65532221</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
             <tr>
                 <td>1</td>
-                <td>2011/04/25 - 14:20:00</td>
+                <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
-                <td>Lecteur 05</td>
-                <td>65532221</td>
-                <td>Duchamps</td>
-                <td>César Z</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
             </tr>
+            <tr>
+                <td>1</td>
+                <td>2016/04/25 - 14:20:00</td>
+                <td>System Architect</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2016/04/25 - 14:20:00</td>
+                <td>System Architect</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2016/04/25 - 14:20:00</td>
+                <td>System Architect</td>
+                <td class="sm-hid">Lecteur 05</td>
+                <td class="sm-hid">655321</td>
+                <td class="sm-hid">Duchamps</td>
+                <td class="sm-hid">César Z</td>
+            </tr>
+            
            
         </tbody>
        
@@ -225,7 +254,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 <div class="col-lg-3 col-sm-4 right-bar">
     <div class="search">
     <i class="fa fa-search" aria-hidden="true"></i>
-        <input class="ronded-input" type="text" placeholder="recherche" name="recherche_inner" id="">
+        <input class="ronded-input" type="text" placeholder="Rechercher" name="recherche_inner" id="">
     </div>
 
     <div class="content">

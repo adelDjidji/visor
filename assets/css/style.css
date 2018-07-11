@@ -164,15 +164,24 @@ opacity: 1;
     margin-top: 25pt;
     width: 100%;
     background-color: var(--gray-2b);
-    padding-left: 16pt;
+    padding-left: 26pt;
     padding-right: 4pt;
     display: flex;
 }
+.search i{
+    color: var(--gray-1);
+    height: 100%;
+    font-size: 11pt;
+    margin-top: 10pt;
+    margin-right: 14pt;
+}
 .right-bar input, .right-bar input:focus{
     background-color: transparent;
-    border: none;
+    border: none !important;
     width: 100%;
     box-shadow: unset !important;
+    color: var(--gray-1);
+    outline: none;
 }
 .right-bar input:focus{
 border: none;
