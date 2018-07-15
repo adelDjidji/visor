@@ -1,4 +1,14 @@
-#container {
+:root {
+    --gray-1: #c9cacc;
+    --gray-2: #4b4d54;
+    --gray-2b: #32343a;
+    --gray-3:  #27292f;
+    --gray-4: #23252b;
+    
+    --orange-1: #ff6541;
+    --orange-2: #a94d3a;
+} 
+  #container {
     position: relative;
   }
   #left-bar-top {
@@ -27,6 +37,9 @@ a:-webkit-any-link {
 .sidebar-menu>li>a {
     padding: 12px 5px 12px 15px;
     display: block;
+}
+.col-lg-2 a.active span{
+    color: #bd5916;
 }
 .sidebar a:hover {
     color: #bd5916;
@@ -104,7 +117,7 @@ li {
     white-space: nowrap;
     width: 40%;
 }
-.header{
+.header {
     color: #d1d3e5;
     text-decoration-color: #d1d3e5;
     text-align: center;
@@ -117,7 +130,7 @@ li {
     margin: 0pt;
     padding: 0pt;
 }
-.add-btn-center{
+.add-btn-center {
     color:#DF691A;
     background-color:transparent;
     background-image:none;
@@ -129,7 +142,7 @@ li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.add-btn-center:hover{
+.add-btn-center:hover {
     color:#fff;
     background-color:#DF691A;
     border-color:#a6a7a9
@@ -152,12 +165,16 @@ li {
     font-family: "myriad";
     margin-right: 20px;
   }
-  .separater{
-      color: #c9cacc;
-      font-size: 30px;
-      text-align: center;
-      margin-right: 20px;
-  }
+.separater {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+.sepa {
+    text-align: center !important;
+    margin-right: 15px !important;
+}
 .left-bar{
     padding: 0;
     background-color: var(--gray-3);
@@ -184,7 +201,10 @@ box-shadow: unset;
     line-height: 1.1;
 }
 .body-content-top .head-no-border{
-    padding: 25pt;
+    padding-top: 25pt;
+    padding-right: 25pt;
+    padding-left: 25pt;
+    padding-bottom: 0pt;
     font-family: "myriad";
 }
 .body-content-top .center-no-img{
@@ -205,4 +225,31 @@ box-shadow: unset;
     color:#fff;
     background-color:#DF691A;
     border-color:#DF691A;
+}
+.name-block {
+    margin-bottom: 0px;
+}
+.name-block img {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.img-bordered-sm {
+    border: 2px solid var(--gray-1);
+    padding: 2px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.name-block .username {
+    font-family: "myriad";
+    font-size: 12px;
+    font-weight: 600;
+}
+.name-block .username, .name-block .description, .user-block .comment {
+    display: block;
+    margin-left: 50px;
+}
+.username a {
+    color: var(--gray-1);
 }
