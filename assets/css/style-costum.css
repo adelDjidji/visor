@@ -1,0 +1,208 @@
+#container {
+    position: relative;
+  }
+  #left-bar-top {
+    top: 0;
+    left: 0;
+  }
+  #left-bar-top {
+    z-index: 10;
+  }
+a {
+    color: #c9cacc;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sidebar a {
+    color: #c9cacc;
+}
+.sidebar-menu li>a {
+    position: relative;
+}
+.sidebar-menu>li>a {
+    padding: 12px 5px 12px 15px;
+    display: block;
+}
+.sidebar a:hover {
+    color: #bd5916;
+}
+.sidebar a:focus,.sidebar a.focus{
+    color: #bd5916;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.menu-item{
+    border-color: #c9cacc;
+    border-bottom: solid 1px var(--gray-2);
+    border-top: solid 1px var(--gray-2);
+    font-size: 10pt;
+    font-family: "myriad";
+}
+.btn.btn-flat {
+    color: #999;
+    border-top-left-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-width: 0px;
+}
+.search-bar{
+    background-color: #32343a;
+    color: #fff;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+}
+.main-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;
+    -webkit-transition: -webkit-transform .3s ease-in-out,width .3s ease-in-out;
+    -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
+    -o-transition: -o-transform .3s ease-in-out,width .3s ease-in-out;
+    transition: transform .3s ease-in-out,width .3s ease-in-out;
+}
+.sidebar {
+    padding-bottom: 10px;
+    background-color: #27292f;
+}
+.sidebar-form {
+    text-overflow: clip;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 29px;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.sidebar-form .btn {
+    box-shadow: none;
+    background-color: #32343a;
+    border: 1px solid transparent;
+}
+.pull-right {
+    float: right;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+    width: 40%;
+}
+.header{
+    color: #d1d3e5;
+    text-decoration-color: #d1d3e5;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+.sidebar-menu {
+    list-style: none;
+    margin: 0pt;
+    padding: 0pt;
+}
+.add-btn-center{
+    color:#DF691A;
+    background-color:transparent;
+    background-image:none;
+    border-color:#a6a7a9;
+    border-width: 0.5px;
+    font-size: 28pt;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.add-btn-center:hover{
+    color:#fff;
+    background-color:#DF691A;
+    border-color:#a6a7a9
+}
+.add-btn-center:focus,.add-btn-center.focus{
+    -webkit-box-shadow:0 0 0 0.2rem rgba(223,105,26,0.5);
+    box-shadow:0 0 0 0.2rem rgba(223,105,26,0.5)
+}
+  .numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /* remove if you don't care about IE8 */
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 2px solid #666;
+    color: #c9cacc;
+    text-align: center;
+    font: 10px;
+    font-family: "myriad";
+    margin-right: 20px;
+  }
+  .separater{
+      color: #c9cacc;
+      font-size: 30px;
+      text-align: center;
+      margin-right: 20px;
+  }
+.left-bar{
+    padding: 0;
+    background-color: var(--gray-3);
+    box-shadow: 2px 2px 8px black;
+  }
+.left-bar input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    box-shadow: unset !important;
+}
+.left-bar input:focus{
+border: none;
+box-shadow: unset;
+}
+.left-bar .content{
+    padding: 29pt;
+}
+.left-bar .large{
+    width: 100% !important;
+    font-size: 28pt;
+    padding: 0px !important;
+    font-family: "myriad";
+    line-height: 1.1;
+}
+.body-content-top .head-no-border{
+    padding: 25pt;
+    font-family: "myriad";
+}
+.body-content-top .center-no-img{
+    padding: 25pt;
+}
+.btn-outline-primary.circle{
+    border-radius: 50%;
+    width: 5px;
+    height: 50px;
+    background: transparent;
+    width: 9% !important;
+    font-size: 28pt;
+    padding: 0px !important;
+    font-family: "myriad";
+    line-height: 1.1;
+}
+.btn-outline-primary.circle:hover{
+    color:#fff;
+    background-color:#DF691A;
+    border-color:#DF691A;
+}
