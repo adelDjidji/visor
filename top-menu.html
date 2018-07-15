@@ -1,7 +1,83 @@
+<style>
+    *{
+        transition: all ease 0.3s;
+    }
+
+    .sidenav {
+        /*height: 100%;*/
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+    }
+</style>
+<!-- MENU SIDEBAR ->  mode tablete -->
+<div id="mySidenav" class="sidenav  hidden-lg tablete-mode">
+
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <img src="assets/icons/one.svg" alt="image no valide">
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="actualite.php">
+                <img class="icon" src="assets/icons/list.svg" alt="image no valide">
+                <span class="txt b">Flux d'actualité  </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img class="icon" src="assets/icons/synoptique.svg" alt="image no valide">
+                <span class="txt b">Synoptiaue  </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img class="icon" src="assets/icons/multiuser.svg" alt="image no valide">
+                <span class="txt b">Groupes & Utilisateurs  </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img class="icon" src="assets/icons/calendar.svg" alt="image no valide">
+                <span class="txt b">Planification  </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <img class="icon" src="assets/icons/seeting.svg" alt="image no valide">
+                <span class="txt b">Paramètres </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link my-input-group_" href="#">
+                <input  type="text" placeholder="Rechercher" class="form-control search-rond">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <div class="img-fill " style="background-image: url('assets/images/pic.jpg'); "></div>
+                Sophie Hones
+            </a>
+        </li>
+
+    </ul>
+    
+</div>
+<!-- /fin MENU SIDEBAR tablete mode -->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+<button class="navbar-toggler" onclick="tNav()" type="button" data-toggle="collapse1" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <img src="assets/icons/mob-menu.svg" alt="image no valide">
   </button>
 
@@ -66,3 +142,64 @@
     
   </div>
 </nav>
+
+
+<script>
+    // Fonction exécutée au redimensionnement
+    function redimensionnement() {
+        if("matchMedia" in window) { // Détection
+            if(window.matchMedia("(min-width:990px)").matches) {
+               closeNav();
+                navopen = !navopen;
+            } else {
+
+            }
+        }
+    }
+    // On lie l'événement resize à la fonction
+    window.addEventListener('resize', redimensionnement, false);
+
+    var navopen=false;
+    function tNav(){
+        if(!navopen) open();
+        else closeNav();
+        navopen = !navopen;
+    }
+    function close_right_bar(){
+        //hide right bar
+        var rightbar =document.getElementsByClassName('right-bar')[0];
+        rightbar.style.flex='0';
+        rightbar.style.overflow="hidden";
+        rightbar.style.width="0px";
+
+        var bodycontent =document.getElementsByClassName('body-content-top')[0];
+        bodycontent.style.maxWidth="100%";
+        bodycontent.style.flex="1";
+    }
+    function open_right_bar() {
+        var rightbar =document.getElementsByClassName('right-bar')[0];
+        rightbar.style.flex='unset';
+        rightbar.style.overflow="auto";
+        rightbar.style.width="100%";
+
+        var bodycontent =document.getElementsByClassName('body-content-top')[0];
+        bodycontent.style.maxWidth="unset";
+        bodycontent.style.flex="unset";
+    }
+    function open(){
+
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        close_right_bar();
+
+        //$('.right-bar').animate({"overflow": "hidden","width": "0px","flex": "0"});
+        //$('.body-content-top').animate({"max-width": "100%","flex": "1"});
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        open_right_bar();
+    }
+</script>

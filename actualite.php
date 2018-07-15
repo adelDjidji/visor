@@ -7,8 +7,6 @@ require 'top-menu.html';
 ?>
 
 
-
-
 <script>
     index_menu =1;
 
