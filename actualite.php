@@ -258,8 +258,8 @@ x.addListener(myFunction) // Attach listener function on state changes
     </div>
 
     <div class="content">
-            <button class="btn btn-outline-primary large">+</button>
-
+            <button  class="btn btn-outline-primary large" data-toggle="modal" data-target="#adel">+</button>
+            
             <div class="lecteur-item">
                <p> <b>Lecteur 34 </b></p>
                 <p>Jogn smmlith</p>
@@ -283,5 +283,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
 <?php
+
+include 'modal.nouvelleRequette.html';
 include 'footer.html';
 ?>

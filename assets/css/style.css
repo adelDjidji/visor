@@ -49,6 +49,7 @@ orange sambre: #a94d3a
 */
 
 :root {
+    /** primary colors */
     --gray-1: #c9cacc;
     --gray-2: #4b4d54;
     --gray-2b: #32343a;
@@ -58,6 +59,7 @@ orange sambre: #a94d3a
     --orange-1: #ff6541;
     --orange-2: #a94d3a;
 
+/** backgrounds for icons SVG */
     --fill-white :invert(.5) sepia(1) saturate(1) hue-rotate(-13deg) brightness(435%);
     --fill-orange :invert(.5) sepia(1) saturate(29) hue-rotate(350deg);
   }
@@ -83,9 +85,13 @@ orange sambre: #a94d3a
 }
 .btn:hover{
     border-color: var(--orange-1)!important;
+    background: var(--orange-2);
 }
 .txt-org{
 color: var(--orange-1);
+}
+body{
+    background-color: var(--gray-3);
 }
 .b{
     font-weight: bold;
@@ -183,6 +189,14 @@ opacity: 1;
     color: var(--gray-1);
     outline: none;
 }
+input:focus{
+    box-shadow: unset !important;
+    border-bottom: solid 2px var(--orange-1) !important;
+}
+select:focus{
+    box-shadow: unset !important;
+    border-bottom: solid 2px var(--orange-1) !important;
+}
 .right-bar input:focus{
 border: none;
 box-shadow: unset;
@@ -217,7 +231,7 @@ box-shadow: unset;
 }
 
 .body-content-top .head{
-        border-bottom: solid 1px var(--gray-2);
+        border-bottom: solid 2px #4b4d54;
         padding: 25pt;
 }
 .body-content-top .center{
