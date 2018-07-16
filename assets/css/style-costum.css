@@ -234,6 +234,12 @@ box-shadow: unset;
     height: 40px;
     float: left;
 }
+.profile-block img {
+    width: 150px;
+    height: 150px;
+    float: center;
+    align-content: center;
+}
 .img-bordered-sm {
     border: 2px solid var(--gray-1);
     padding: 2px;
@@ -251,5 +257,82 @@ box-shadow: unset;
     margin-left: 50px;
 }
 .username a {
+    color: var(--gray-1);
+}
+.username {
+    align-content: center;
+    display: block;
+    margin-left: 30px;
+    padding: 5px;
+}
+element.style {
+    display: block;
+    padding-right: 17px;
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.fade.in {
+    opacity: 1;
+}
+#modal-default.modal {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    /* display: none; */
+    /* overflow: hidden; */
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+.modal.fade.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(+32%,+10%);
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+#modal-default .modal-dialog {
+    width: 580px !important;
+    margin: 30px auto;
+    max-width: 600px !important;
+}
+.modal-content {
+    position: relative;
+    background-color: var(--gray-2b);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0;
+}
+.btn.btn-outline-primary.small {
+    font-size: 8pt;
+    text-align: center;
+    padding: 10px !important;
+}
+.btn.btn-outline-primary.active.small {
+    width: 30%;
+    font-size: 8pt;
+    text-align: center;
+    padding: 10px !important;
+}
+.txt-gray-c{
     color: var(--gray-1);
 }

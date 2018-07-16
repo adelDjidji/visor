@@ -15,6 +15,12 @@ phpinfo();*/
 ?>
 <script>
     index_menu =2;
+    
+    var x = document.getElementById("modal-default"); 
+
+    function closeDialog() { 
+    x.close(); 
+} 
 </script>
 <div id="container" class="body">
 
@@ -109,7 +115,7 @@ phpinfo();*/
     <!--Fin head -->
     <div class="row center-no-img">
     <div class="box-body table-responsive no-padding">
-              <table id="repertoire" class="table table-hover">
+              <table class="table table-hover">
                 <tbody>
                 <thead>
                     <tr>
@@ -130,9 +136,9 @@ phpinfo();*/
                         <div class="name-block">
                             <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
                                 <span class="username">
-                                <a href="#">Jonathan Burke Jr.</a>
+                                <a href="#">Sophie Hones</a>
                                 </span>
-                            <span class="description">Shared publicly - 7:30 PM today</span>
+                            <span class="description">Vauban system - security team</span>
                         </div> 
                         </td>
                         <td>Ideterminée</td>
@@ -144,9 +150,9 @@ phpinfo();*/
                     <div class="name-block">
                         <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
                             <span class="username">
-                            <a href="#">Jonathan Burke Jr.</a>
+                            <a href="#">Sophie Hones</a>
                             </span>
-                        <span class="description">Shared publicly - 7:30 PM today</span>
+                        <span class="description">Vauban system - security team</span>
                     </div> 
                   </td>
                   <td>Ideterminée</td>
@@ -155,13 +161,13 @@ phpinfo();*/
                 </tr>
                 <tr>
                 <td>
-                  <div class="name-block">
-                      <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
-                          <span class="username">
-                          <a href="#">Jonathan Burke Jr.</a>
-                          </span>
-                      <span class="description">Shared publicly - 7:30 PM today</span>
-                  </div> 
+                    <div class="name-block">
+                        <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
+                            <span class="username">
+                            <a href="#">Sophie Hones</a>
+                            </span>
+                        <span class="description">Vauban system - security team</span>
+                    </div> 
                 </td>
                 <td>Ideterminée</td>
                 <td>11/7/2014 - 09:17:32</td>
@@ -240,7 +246,78 @@ phpinfo();*/
                 
               </tbody></table>
             </div>
-       
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                Launch Default Modal</button>
+        <div class="modal fade in" id="modal-default" style="display: block; padding-right: 17px;">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="row head-no-border">
+                    <div class="col-lg-8">
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-primary active small">
+                                <input type="checkbox" autocomplete="off"> Informations
+                            </label>
+                            <label class="btn btn-outline-primary small">
+                                <input type="checkbox" checked="" autocomplete="off"> Flux d'actualités 
+                            </label>
+                            <label class="btn btn-outline-primary small">
+                                <input type="checkbox" checked="" autocomplete="off"> Localisations
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-outline-primary small">Modifier</button>
+                    </div>
+                </div>
+                <div class="row head-no-border">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4">
+                        <div class="profile-block">
+                            <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
+                        </div>
+                        <span class="username">
+                            <a href="#">Sophie Hones</a>
+                            <span class="description">Vauban system-security team</span>
+                        </span>
+                    </div>   
+                    <div class="col-lg-4"></div>    
+                </div>
+                <div class="row head-no-border">
+                    <div class="col-lg-4"><label class="txt-org">Présence :</label><span class="txt-gray-c"> Indétérminée</span></div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-6"><label class="txt-org">Dérnier passage :</label><span class="txt-gray-c"> 15/11/2015 - 9:48</span></div>
+                </div>
+                <div class="head-no-border">
+                    <div class="box-body table-responsive no-padding">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td><div class="txt-gray-c"><span> Identifiant 1 : 48151642</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="txt-gray-c"><span> AUTORISATIONS</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="txt-gray-c"><span> Statut : autorisé</span></div></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="txt-gray-c"><span> Plage horaire : plage du groupe</span></div></td>
+                                </tr>
+                            <tbody>    
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" onclick="closeDialog()" id="close" class="btn btn-default">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
     </div>
 
 
@@ -248,6 +325,7 @@ phpinfo();*/
 </div>
 <!-- /fin .right-bar -->
 </div>
+
 <!-- /Fin .body -->
 </body>
 </html>
