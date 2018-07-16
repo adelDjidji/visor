@@ -1,14 +1,21 @@
 
+/* apply on tablette mode*/
 @media (max-width: 990px) {
     .sm-hid{
         display: none;
     }
+
 }
+
+/* just on web mode */
 @media (min-width: 990px){
     .hidden-lg{
         display: none;
     }
 
+    .center-login{
+        margin-top: 12% !important;
+    }
 
     .mySidenav{
         width: 0 ;

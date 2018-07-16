@@ -10,34 +10,6 @@ require 'top-menu.html';
 <script>
     index_menu =1;
 
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    $('#example').DataTable( {
-        "columnDefs": [
-            {
-                "targets": [ 4 ],
-                "visible": false
-            },
-            {
-                "targets": [ 5 ],
-                "visible": false
-            }
-        ]
-    } );
-    function myFunction(x) {
-    if (x.matches) { // If media query matches
-        
-        document.body.style.backgroundColor = "green";
-        
-    
-    } else {
-        document.body.style.backgroundColor = "pink";
-    }
-}
-
-var x = window.matchMedia("(max-width: 990px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
-
 </script>
 
 <div class="body">
@@ -78,7 +50,7 @@ x.addListener(myFunction) // Attach listener function on state changes
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
+                <td><span class="numberCircle">1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -87,7 +59,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span class="numberCircle">1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -96,7 +68,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -105,7 +77,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -114,7 +86,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -123,7 +95,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -132,7 +104,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -141,7 +113,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -150,7 +122,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -159,7 +131,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -168,7 +140,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -177,7 +149,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -186,7 +158,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -195,7 +167,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -204,7 +176,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -213,7 +185,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -222,7 +194,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -231,7 +203,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td>1</td>
+                <td><span>1</span></td>
                 <td>2016/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>

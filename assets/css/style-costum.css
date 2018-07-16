@@ -86,9 +86,9 @@ li {
     margin-bottom: 29px;
 }
 .input-group {
-    position: relative;
-    display: table;
-    border-collapse: separate;
+    /*position: relative;*/
+    /*display: table;*/
+    /*border-collapse: separate;*/
 }
 .sidebar-form .btn {
     box-shadow: none;

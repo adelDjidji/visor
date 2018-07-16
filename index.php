@@ -6,20 +6,19 @@
  * Time: 19:53
  */
 
-
 require 'head.html';
 
 ?>
-<div class="center" style="text-align: center; padding: 21%; padding-bottom: 0px;">
+
+<div class="col-lg-3 col-sm-6 col-xs-11 center-login" style="text-align: center;    margin: auto;">
 
 
-
-    <img src="assets/icons/one.svg" alt="">
-    <form action="" style="padding: 3% 24%;">
+    <img src="assets/images/big-logo.png" alt="" style="    width: 60%;">
+    <form action="" style=" ">
 
             <div class="form-group">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <input type="text" class="form-control labeled" aria-label="" placeholder="Username ou email">
                     <div class="input-group-append">
                         <i class="fa fa-user"></i>
                     </div>
@@ -28,7 +27,7 @@ require 'head.html';
 
         <div class="form-group">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <input type="password" class="form-control labeled" aria-label="" placeholder="Mot de passe">
                     <div class="input-group-append">
                         <i class="fa fa-lock"></i>
                     </div>
@@ -46,6 +45,21 @@ require 'head.html';
 
 
 </div>
+
+    <style>
+
+    </style>
+
+
+    <script>
+
+        $(document).on('click','input.labeled', function () {
+            alert('ademin');
+            var o =$(this).closest('.input-group').find('.fa').getAttribute('class');
+            alert(o);
+        });
+
+    </script>
 <?php
 
 include 'footer.html';

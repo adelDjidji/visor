@@ -356,13 +356,14 @@ nav li.nav-item:last-child{
 ul.navbar-nav{
    /* padding: 9pt 1pt 5pt 1pt;*/
 }
-.my-table tbody tr>td:first-child{
+.my-table tbody tr>td>span:first-child{
     border: solid 1px;
-    padding: 0px;
+    padding: 6px 8pt;
     text-align: center;
     border-radius: 54%;
     font-weight: bolder;
-    font-size: 13pt;    
+    font-size: 13pt;
+    width: 32px;
 }
 img.download{
     cursor: pointer;
@@ -382,4 +383,24 @@ img.download:hover{
     border-radius: 50%;
     display: inline-flex;
     border: solid 2px gray;
+}
+
+/*
+Index page
+ */
+
+.center-login form input{
+    padding-right: 25px!important;
+    color: white !important;
+}
+.center-login form input:focus {
+
+}
+.center-login form .input-group-append{
+    padding: 4%;
+    margin-left: -25px;
+}
+.center-login img{
+    width: 60%;
+    margin-bottom: 25%;
 }
