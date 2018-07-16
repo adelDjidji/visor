@@ -56,7 +56,7 @@ x.addListener(myFunction) // Attach listener function on state changes
                     </label>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-4">
+            <div class="col-lg-4 col-sm-4" style="text-align: right;">
                 <button class="btn btn-outline-primary sm-hid">
                 Modifier</button>
                 <img class="orange-icon download" src="assets/icons/doznloqd.svg" alt="">

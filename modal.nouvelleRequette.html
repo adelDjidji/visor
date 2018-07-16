@@ -1,4 +1,14 @@
-<div class="modal animated fadeIn" id="adel">
+<script>
+    $(document).ready(function(){
+        var toggle=false;
+        $("#flip").click(function(){
+            $("#panel1").slideToggle("slow");
+                if($(this).hasClass('active')) $(this).removeClass('active');
+                else $(this).addClass('active');
+        });
+    });
+</script>
+<div class="modal animated fadeInDown" id="adel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -9,118 +19,106 @@
               </a>
             </div>
             <div class="modal-body">
-                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
+                    <input class="form-control form-control-lg" type="text" placeholder="Nouvelle requete" id="inputLarge">
+
+
 
                 <style>
         input  {
-            color: white;
+            color: white !important;
         }
-                    .btn-select, btn-select:focus {
+        ::placeholder{
+            color: gray !important;
+            opacity: 1;
+        }
+
+                    #flip {
+                        padding: 0;
+                        text-align: center;
+                        display: flex;
+                        border-bottom: solid 1px #c3c3c3;
+                        margin-top: 18pt;
+                        cursor: pointer;
+                    }
+                    #flip:hover p{
                         color: white;
-                        padding:6px;
-                        width:100%;
-                        border-radius:2px;
-                        background-color:transparent;
-                        border: none;
-                        border-bottom: solid 2px var(--orange-1);
-                        text-align:left;position:relative;
-                        outline: none;
-                    }
+                        font-size: 11pt;
 
-                    .btn-select:after {
-                        content:"";
-                        display: block;
-                        position:absolute;
-                        top:50%;
-                        right:10px;
-                        margin-top:-2px;
-                        width: 0;
-                        height: 0;
-                        border-top: 4px solid orange;
-                        border-right: 4px solid transparent;
-                        border-left: 4px solid transparent;
                     }
+                    #flip>i{
+                        position: absolute;
+                        right: 22pt;
+                    }
+                    #flip>p{
+                        font-size: 11pt;
+                        color: gray;
+                    }
+                    #flip.active>i{
+                        color: var(--orange-1);
+                        font-size: 13pt;
+                        transition: all ease 0.3s;
+                    }
+                    #flip.active>p{
+                        color:white;
+                    }
+                    #panel1 {
+                        padding: 18px 12pt;
+                        margin-bottom: 0px;
+                        display: none;
+                    }
+        .custom-radio .custom-control-input:checked ~ .custom-control-label{
+            color: var(--orange-1);
+        }
+                    /*override radio button style*/
+                    .custom-control-input:checked ~ .custom-control-label::before {
+                        border-color: var(--orange-1) !important;
+                    }
+                    .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+                        filter: var(--fill-orange);
+                    }
+                    .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+                        background-color: transparent !important;
+                    }
+                    .custom-control-label::before {
+                        background-color: transparent !important;
+                        border-color:var(--orange-1) !important;
+                    }
+                    /* End overiding radio button*/
 
-                    .dropdown-menu-select {
-                        padding:0;
-                        margin-top:-2px;
-                        width:100%;
-                        border-radius:0 0 2px 2px;
-                        border-color:#777;
-                    }
-
-                    .dropdown-radio {
-                        display:block;
-                        position:relative;
-                        margin:0;
-                        width:100%;
-                        overflow:hidden;
-                        text-overflow:ellipsis;
-                        border-bottom:1px solid #eaeaea;
-                        cursor:pointer;
-                    }
-                    .dropdown-radio input {
-                        visibility: hidden;
-                        position:absolute;
-                        left: -30px;
-                    }
-                    .dropdown-radio i {
-                        font-weight:normal;
-                        font-style:normal;
-                        display:block;
-                        padding:7px;
-                    }
-                    .dropdown-radio i:hover {
-                        background-color: gray;
+                    li.panel-item{
+                        list-style: none;
+                        margin-bottom: 11pt;
+                        border-bottom: solid 1px var(--gray);
                         color: white;
+                        padding-bottom: 6pt;
                     }
+        li.panel-item:hover{
+            /*color: var(--orange-1);*/
+        }
                 </style>
-                <div class="dropdown">
-                    <button
-                            class=" btn-select"
-                            data-toggle="dropdown">Alpha</button>
-                    <ul class="dropdown-menu dropdown-menu-select">
-                            <div class="form-group">
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                                </div>
-
-                            </div>
 
 
 
-                        <li><label class="dropdown-radio">
-                            <input type="radio" value="001" name="alphabet">
-                            <i>Alpha</i>
-                        </label>
-                        </li>
-                        <li><label class="dropdown-radio">
-                            <input type="radio" value="002" name="alphabet">
-                            <i>Bravo</i>
-                        </label>
-                        </li>
-                        <li><label class="dropdown-radio">
-                            <input type="radio" value="003" name="alphabet">
-                            <i>Charlie</i>
-                        </label>
-                        </li>
-                    </ul>
+                <div id="flip">
+                    <p>Affchage</p>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
+                <ul id="panel1">
+                    <li class="panel-item">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                        </div>
+                    </li>
+                    <li class="panel-item">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked="">
+                            <label class="custom-control-label" for="customRadio2">Toggle this custom radio</label>
+                        </div>
+                    </li>
+                </ul>
 
 
-                <!--<select name="affichage" class="form-control" id="aff">-->
-                    <!--<option value="" disabled selected> Affichage</option>-->
-                    <!--<option value="date">Date </option>-->
-                    <!--<option value="heure">Heure </option>-->
-                    <!--<option value="nature">Nature</option>-->
-                    <!--<option value="central">Centrale</option>-->
-                    <!--<option value="lecteur">Lecteur</option>-->
-                    <!--<option value="indentifiant">Identifiant</option>-->
-                    <!--<option value="nom">Nom</option>-->
-                    <!--<option value="prenom">Prenom</option>-->
-                    <!--<option value="groupe">Groupe</option>-->
-                <!--</select>-->
             </div>
 
           </div>
@@ -136,6 +134,7 @@
                 padding: 7px 11pt;
                 background-color: var(--gray-2);
                 border-color: gray;
+                border-radius: 0;
             }
             .modal-header>a{
                 color: var(--gray-1);
@@ -163,36 +162,3 @@
               outline: red;
           }
       </style>
-<script>
-    $('.dropdown-radio').find('input').change(function() {
-        var dropdown = $(this).closest('.dropdown');
-        var radioname = $(this).attr('name');
-        var checked = 'input[name=' + radioname + ']:checked';
-
-        //update the text
-        var checkedtext = $(checked).closest('.dropdown-radio').text();
-        dropdown.find('button').text( checkedtext );
-
-        //retrieve the checked value, if needed in page
-        var thisvalue = dropdown.find( checked ).val();
-        alert ( thisvalue  );
-    });
-
-    /*
-
-    //If IE8 support is required, add this inside your own IE8 conditional:
-    //See: http://www.paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-
-        //Prevent ie8 from closing the dropdown before clicking the checkbox
-        $('.dropdown-radio').click( function( event ) {
-            event.stopImmediatePropagation();
-        })
-        $(document).on('change', '.dropdown-radio input', function(){
-            dropdownRadio();  //all the same functions as above
-            $('.dropdown-menu').dropdown('toggle');
-        })
-
-        */
-
-
-</script>

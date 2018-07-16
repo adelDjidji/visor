@@ -1,61 +1,37 @@
 <?php
 
 require 'head.html';
-
-
-
 ?>
 
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel1").slideToggle("slow");
+                });
+            });
+        </script>
 
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <div class="btn-group" role="group">
-            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-        </div>
-    </div>
+        <style>
+            #panel1, #flip {
+                padding: 5px;
+                text-align: center;
+                background-color: #e5eecc;
+                border: solid 1px #c3c3c3;
+            }
 
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <button type="button" class="btn btn-success">Success</button>
-        <div class="btn-group" role="group">
-            <button id="btnGroupDrop2" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <button type="button" class="btn btn-info">Info</button>
-        <div class="btn-group" role="group">
-            <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-        <button type="button" class="btn btn-danger">Danger</button>
-        <div class="btn-group" role="group">
-            <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu" aria-labelledby="btnGroupDrop4" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 45px, 0px); top: 0px; left: 0px; will-change: transform;">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
-            </div>
-        </div>
-    </div>
+            #panel1 {
+                padding: 50px;
+                display: none;
+            }
+        </style>
 
 
 
+    <div id="flip">Click to slide the panel1 down or up</div>
+    <div id="panel1">Hello world!</div>
 
-    </body>
-</html>
+
+
 <?php
 
 include 'footer.html';

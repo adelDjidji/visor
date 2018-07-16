@@ -90,6 +90,9 @@ orange sambre: #a94d3a
 .txt-org{
 color: var(--orange-1);
 }
+.txt{
+    color: var(--gray-1);
+}
 body{
     background-color: var(--gray-3);
 }
@@ -138,8 +141,8 @@ nav > .col-lg-1{
     text-align: center!important;
 }
 .navbar{
-    padding-top: 13px;
-    padding-bottom: 8px;
+    background-color: var(--gray-2) !important;
+    padding: 0;
 }
 nav .col-lg-2:last-child{
     color: white;
@@ -150,7 +153,11 @@ nav .col-lg-2:last-child{
 .navbar .col-lg-1{
     max-width: 5.33%;
 }
-
+.logo-home{
+    padding-top: 8pt;
+    padding-left: 4pt;
+    cursor: pointer;
+}
 .body-content-top{
     padding: 0;
 }
@@ -162,11 +169,12 @@ color: var(--gray-1);
 opacity: 1;
 }
 .right-bar{
+    transition :all ease 0.8s;
     padding: 0;
     background-color: var(--gray-3);
     box-shadow: -2px 3px 9px black;
 }
-.right-bar .search{
+.right-bar .search, .sidenav .search{
     margin-top: 25pt;
     width: 100%;
     background-color: var(--gray-2b);
@@ -181,7 +189,7 @@ opacity: 1;
     margin-top: 10pt;
     margin-right: 14pt;
 }
-.right-bar input, .right-bar input:focus{
+.right-bar input, .right-bar input:focus, .sidenav input, .sidenav input:focus{
     background-color: transparent;
     border: none !important;
     width: 100%;
@@ -250,6 +258,8 @@ box-shadow: unset;
 }
 table.dataTable tbody tr {
     background-color: transparent !important;
+    line-height: 2.3;
+    font-size: 11pt;
 }
 #example_wraper{
     width: 100%;
@@ -262,11 +272,12 @@ table.dataTable tbody tr {
     color: var(--gray-1);
     font-family: myriad-bold;
     font-size: 11pt;
+    background-color: var(--gray-2b);
 }
 table.dataTable thead th, table.dataTable thead td {
      border-bottom: unset !important; 
 }
-.my-table tr :hover{
+.my-table thead tr :hover{
     color: var(--orange-1);
     cursor: pointer;
 }
@@ -325,14 +336,21 @@ nav li.nav-item:hover img, .tablete-mode li.nav-item:hover img{
 .nav-item.active img{
     filter: var(--fill-orange);
 }
-nav li.nav-item:last-child,.tablete-mode li.nav-item:last-child{
+nav li.nav-item:last-child{
     font-weight: bolder;
     font-size: 12pt;
     line-height: 1;
 }
+.tablete-mode li.nav-item:last-child .txt{
+    position: relative;
+    bottom: 8pt;
+    left: 4pt;
+}
 .tablete-mode li.nav-item{
     margin-top: 14pt;
-    border-bottom: solid 1px var(--orange-1);
+    border-bottom: solid 1px;
+    margin-left: 12pt;
+    font-size: 11pt;
 }
 
 ul.navbar-nav{
@@ -355,30 +373,13 @@ img.download:hover{
     filter: unset;
 }
 
-@media (max-width: 990px) {
-    .sm-hid{
-        display: none;
-    }
-}
-@media (min-width: 990px){
-    .hidden-lg{
-        display: none;
-    }
-
-
-    .mySidenav{
-        width: 0 ;
-    }
-    #main{
-        margin-left: 0;
-    }
-}
 .img-fill{
-    width: 40pt;
-    height: 40pt;
+    width: 26pt;
+    height: 26pt;
     background-position: 65%;
     background-size: 226%;
     background-repeat: no-repeat;
     border-radius: 50%;
     display: inline-flex;
+    border: solid 2px gray;
 }
