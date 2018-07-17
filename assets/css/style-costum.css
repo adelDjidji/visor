@@ -28,6 +28,9 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
+a.caret-down {
+    color: #7b7f89;
+}
 .sidebar a {
     color: #c9cacc;
 }
@@ -212,10 +215,9 @@ box-shadow: unset;
 }
 .btn-outline-primary.circle{
     border-radius: 50%;
-    width: 5px;
     height: 50px;
     background: transparent;
-    width: 9% !important;
+    width: 9%;
     font-size: 28pt;
     padding: 0px !important;
     font-family: "myriad";
@@ -336,3 +338,9 @@ element.style {
 .txt-gray-c{
     color: var(--gray-1);
 }
+.txt-gray-2{
+    color: #7b7d89;
+}
+#table-dy.table{font-size:9pt;width:100%;max-width:100%;margin-bottom:1rem;color: #7b7d89 !important;background-color:transparent}
+#table-dy.table tbody+tbody{border-top:1px solid #4b4d54 !important}
+#table-dy.table thead th{font-family: "myriad-bold";font-size:10pt;vertical-align:bottom;border:0px;padding: 5px}

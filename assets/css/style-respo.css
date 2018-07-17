@@ -4,7 +4,10 @@
     .sm-hid{
         display: none;
     }
-
+    .btn-outline-primary.circle{
+        width: 50px !important;
+        height: 50px !important;
+    }
 }
 
 /* just on web mode */
