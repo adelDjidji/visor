@@ -50,7 +50,7 @@ require 'top-menu.html';
         </thead>
         <tbody>
             <tr>
-                <td><span class="numberCircle">1</span></td>
+                <td><span class="circled">1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>
@@ -59,7 +59,7 @@ require 'top-menu.html';
                 <td class="sm-hid">César Z</td>
             </tr>
             <tr>
-                <td><span class="numberCircle">1</span></td>
+                <td><span class="circled">1</span></td>
                 <td>2011/04/25 - 14:20:00</td>
                 <td>System Architect</td>
                 <td class="sm-hid">Lecteur 05</td>

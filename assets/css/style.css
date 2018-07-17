@@ -84,8 +84,8 @@ orange sambre: #a94d3a
     background-color: var(--gray-4); 
 }
 .btn:hover{
-    border-color: var(--orange-1)!important;
-    background: var(--orange-2);
+    border-color: transparent!important;
+    background-color: var(--orange-2) !important;
 }
 .txt-org{
 color: var(--orange-1);
@@ -356,14 +356,17 @@ nav li.nav-item:last-child{
 ul.navbar-nav{
    /* padding: 9pt 1pt 5pt 1pt;*/
 }
-.my-table tbody tr>td>span:first-child{
+
+.circled{
     border: solid 1px;
     padding: 6px 8pt;
     text-align: center;
     border-radius: 54%;
+    color: var(--gray-1);
+}
+.my-table .circled{
     font-weight: bolder;
     font-size: 13pt;
-    width: 32px;
 }
 img.download{
     cursor: pointer;
@@ -385,6 +388,24 @@ img.download:hover{
     border: solid 2px gray;
 }
 
+/* form group with icon */
+form .input-group-append{
+    padding: 4%;
+    margin-left: -41px;
+    z-index: 1;
+}
+.input-group input{
+    z-index: 0 !important;
+}
+
+
+a{
+    color: var(--gray-1) !important;
+    font-weight: bold !important;
+}
+a:hover{
+    color: var(--orange-2) !important;
+}
 /*
 Index page
  */
@@ -396,11 +417,21 @@ Index page
 .center-login form input:focus {
 
 }
-.center-login form .input-group-append{
-    padding: 4%;
-    margin-left: -25px;
-}
+
 .center-login img{
     width: 60%;
     margin-bottom: 25%;
+}
+
+input[type='submit']{
+    width: 100%;
+}
+.footer .circled:nth-child(2){
+    border: solid 2px;
+    padding: 6px 8.5pt;
+}
+.footer .circled:first-child{
+    margin-right: 7pt;
+    border: solid 2px;
+    padding: 6px 5pt;
 }

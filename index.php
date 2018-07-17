@@ -36,29 +36,70 @@ require 'head.html';
 
         <input type="submit" class="btn btn-outline-primary active" value="Se connecter">
         <br><br>
-        <a href="#"> Mot de passe oublié ?</a>
+        <br>
+
+        <a href="#"> Mot de passe oublié <i class="fas fa-question-circle"></i> </a>
 
     </form>
-<div class="footer">
 
 </div>
 
-
-</div>
-
+    <div class="footer">
+        <span class="circled">FR</span>
+        <span class="circled">i</span>
+    </div>
     <style>
+.form-group .fa-times-circle{
+    cursor: pointer;
+}
+.form-group .fa-times-circle:hover{
+    color: white;
+}
+        .footer{
+            position: absolute;
+            bottom: 15pt;
+            right: 15pt;
+        }
 
     </style>
 
 
     <script>
 
-        $(document).on('click','input.labeled', function () {
-            alert('ademin');
-            var o =$(this).closest('.input-group').find('.fa').getAttribute('class');
-            alert(o);
+var in_input=false;
+        $(document).on('input','input.labeled', function () {
+            in_input =true;
+            $(this).closest('.input-group')[0].childNodes[3].childNodes[1].setAttribute('class','fas fa-times-circle');
+        });
+        $(document).on('empty','input.labeled', function () {
+            in_input = false;
+            $(this).closest('.input-group')[0].childNodes[3].childNodes[1].setAttribute('class','fa fa-user');
+        });
+        $(document).on('keyup','input.labeled', function () {
+            if (!this.value) {
+                $(this).closest('.input-group')[0].childNodes[3].childNodes[1].setAttribute('class','fa fa-user');
+            }
         });
 
+
+        $(document).on('click','i.fa-times-circle', function () {
+             $(this).closest('.input-group')[0].childNodes[1].value='';
+             var type= $(this).closest('.input-group')[0].childNodes[1].getAttribute('type');
+             if(type=='text') $(this).closest('.input-group')[0].childNodes[3].childNodes[1].setAttribute('class','fa fa-user');
+             else  $(this).closest('.input-group')[0].childNodes[3].childNodes[1].setAttribute('class','fa fa-lock');
+
+        });
+
+        $(document).ready(function () {
+           var items = $('.circled');
+           console.log(items);
+           var size,l=items.length,i=0;
+           console.log('items length = '+l);
+          for(i=0;i<l;i++){
+               size = items[i].innerText.length;
+
+           }
+        });
     </script>
 <?php
 
