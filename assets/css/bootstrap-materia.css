@@ -1676,18 +1676,23 @@ pre code {
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
+  color: #c9cacc;
 }
 
 .table th,
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #4b4d54;
 }
 
 .table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  color: #7b7f89;
+  font-family: "myriad-bold";
+  font-size:12pt;
+  vertical-align:bottom;
+  border:0px;
+  padding: 5px
 }
 
 .table tbody + tbody {
