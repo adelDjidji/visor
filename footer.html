@@ -16,7 +16,10 @@ $(document).ready(function() {
 
 
 $('.navbar').find(".nav-item")[index_menu].setAttribute('class',"nav-item active");
+$('.menu-item').find("a")[index_left_menu].setAttribute('class',"active");
 
+var titres = ["Flux d'actualité","Synoptique","Groupes & Utilisateurs","planniification","paramètres"];
+document.getElementById('titre').innerText = titres[index_menu - 1];
 
 
 
