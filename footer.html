@@ -23,6 +23,9 @@ $('.sidenav').find(".nav-item")[index_menu-1].setAttribute('class',"nav-item act
 var titres = ["Flux d'actualité","Synoptique","Groupes & Utilisateurs","planniification","paramètres"];
 document.getElementById('titre').innerText = titres[index_menu - 1];
 
+/*
+    function update circled items dynamicly while loading the page.
+*/
 var items = document.getElementsByClassName('circled');
 var i=0;
 var l;
@@ -33,12 +36,9 @@ l = items[i].innerText.length;
 if(l==2) items[i].style.padding='6px 5pt';
 else if(l==3) items[i].style.padding='7px 2pt';
 
-    console.log(" length : "+items[i].innerText.length);
 }
 
 } );
-
-
 
 
 

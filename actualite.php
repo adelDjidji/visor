@@ -18,7 +18,7 @@ require 'top-menu.html';
 
     <div class="col-lg-9 col-sm-8 body-content-top">
         <div class="row head">
-            <div class="col-lg-8 col-sm-8">
+            <div class="col-lg-8 col-sm-8 col-xs-6">
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-outline-primary ">
                         <input type="checkbox" checked="" autocomplete="off"> Récente
@@ -28,15 +28,15 @@ require 'top-menu.html';
                     </label>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-4" style="text-align: right;">
-                <button class="btn btn-outline-primary sm-hid">
+            <div class="col-lg-4 col-sm-4 col-xs-6 " style="text-align: right;">
+                <button class="btn btn-outline-primary sm-hid xs-hid">
                 Modifier</button>
                 <img class="orange-icon download" src="assets/icons/doznloqd.svg" alt="">
             </div>
         </div>
         <!-- /fin .row head -->
         <div class="row center">
-        <table id="example" class="hover my-table" style="width:100%">
+        <table id="example" class="hover my-table xs-hid" style="width:100%">
         <thead>
             <tr>
                 <th></th>
@@ -58,6 +58,7 @@ require 'top-menu.html';
                 <td class="sm-hid">Duchamps</td>
                 <td class="sm-hid">César Z</td>
             </tr>
+
             <tr>
                 <td><span class="circled">41</span></td>
                 <td>2011/04/25 - 14:20:00</td>
@@ -66,7 +67,7 @@ require 'top-menu.html';
                 <td class="sm-hid">655307</td>
                 <td class="sm-hid">Duchamps</td>
                 <td class="sm-hid">César Z</td>
-            </tr>
+            </tr>   
             <tr>
                 <td><span class="circled">5</span></td>
                 <td>2011/04/25 - 14:20:00</td>
@@ -216,7 +217,13 @@ require 'top-menu.html';
         </tbody>
        
     </table>
+
+    <div class="hidden-lg sm-hid">
+        smaaaart phooonee
+    </div>
+
         </div>
+        <!-- /fin .center -->
     </div>
     <!-- /fin .body-content-top -->
 

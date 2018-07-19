@@ -1,6 +1,6 @@
 
 /* apply on tablette mode*/
-@media (max-width: 990px) {
+@media (max-width: 990px) and (min-width:450px) {
     .sm-hid{
         display: none;
     }
@@ -26,6 +26,20 @@
     #main{
         margin-left: 0;
     }
+}
+/* mode smartPhone */
+@media (min-width: 450px)  {
+    
+
+ }
+
+@media (max-width:450px){
+ .xs-hid{
+     display: none;
+ }
+ .right-bar{
+display: none;
+ }
 }
 
 @media screen and (max-height: 450px) {
