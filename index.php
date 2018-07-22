@@ -49,23 +49,6 @@ require 'head.html';
         <span class="circled">i</span>
     </div>
 
-    <style>
-
-        .form-group .fa-times-circle{
-            cursor: pointer;
-        }
-        .form-group .fa-times-circle:hover{
-            color: white;
-        }
-        .footer{
-            position: absolute;
-            bottom: 15pt;
-            right: 15pt;
-        }
-
-    </style>
-
-
     <script>
 
 var in_input=false;

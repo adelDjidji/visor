@@ -410,6 +410,17 @@ a:hover{
 /*
 Index page
  */
+.form-group .fa-times-circle{
+    cursor: pointer;
+}
+.form-group .fa-times-circle:hover{
+    color: white;
+}
+.footer{
+    position: absolute;
+    bottom: 15pt;
+    right: 15pt;
+}
 
 .center-login form input{
     padding-right: 25px!important;
