@@ -1,24 +1,22 @@
 <?php
-
 require 'head.html';
-
 require 'top-menu.html';
-
 ?>
 
 
 <script>
     index_menu =1;
-
 </script>
 
 <div class="body">
 
-
-
     <div class="col-lg-9 col-sm-8 body-content-top">
         <div class="row head">
-            <div class="col-lg-8 col-sm-8 col-xs-6">
+            <div class=" col-xs-2 hidden-lg sm-hid">
+                <button  class="btn btn-outline-primary rond" data-toggle="modal" data-target="#adel">+</button>
+            </div>
+            <div class="col-lg-8 col-sm-8 col-xs-7">
+
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-outline-primary ">
                         <input type="checkbox" checked="" autocomplete="off"> Récente
@@ -28,7 +26,7 @@ require 'top-menu.html';
                     </label>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-4 col-xs-6 " style="text-align: right;">
+            <div class="col-lg-4 col-sm-4 col-xs-3 " style="text-align: right;">
                 <button class="btn btn-outline-primary sm-hid xs-hid">
                 Modifier</button>
                 <img class="orange-icon download" src="assets/icons/doznloqd.svg" alt="">
@@ -218,8 +216,94 @@ require 'top-menu.html';
        
     </table>
 
-    <div class="hidden-lg sm-hid">
-        smaaaart phooonee
+    <div class="hidden-lg sm-hid table-zone">
+        <div class="panel-title">27 octobre 2017</div>
+        <div class="panel">
+            <div class="row line">
+                <span class="circled">1</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">15</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">11</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+        </div>
+
+        <div class="panel-title">27 octobre 2017</div>
+        <div class="panel">
+            <div class="row line">
+                <span class="circled">1</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">15</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">11</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+        </div>
+
+        <div class="panel-title">27 octobre 2017</div>
+        <div class="panel">
+            <div class="row line">
+                <span class="circled">1</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">15</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">11</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+        </div>
+
+        <div class="panel-title">27 octobre 2017</div>
+        <div class="panel">
+            <div class="row line">
+                <span class="circled">1</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">15</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+            <div class="row line">
+                <span class="circled">11</span>
+                <span>unconnu identifiant</span>
+                <span class="right-align">17:20</span>
+            </div>
+        </div>
+
+
+
+        <script>
+            $(document).ready(function(){
+
+                $(".panel-title").click(function(){
+                    $(this).next().slideToggle("fast");
+
+                });
+            });
+        </script>
     </div>
 
         </div>
@@ -260,7 +344,6 @@ require 'top-menu.html';
 
 
 <?php
-
 include 'modal.nouvelleRequette.html';
 include 'footer.html';
 ?>

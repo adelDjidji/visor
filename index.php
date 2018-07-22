@@ -10,10 +10,10 @@ require 'head.html';
 
 ?>
 
-<div class="col-lg-3 col-sm-6 col-xs-11 center-login" style="text-align: center;    margin: auto;">
+<div class="col-lg-3 col-sm-6 center-login" style="text-align: center;margin: auto;">
 
 
-    <img src="assets/images/big-logo.png" alt="" style="    width: 60%;">
+    <img src="assets/images/big-logo.png" alt="" style="width: 60%;">
     <form action="" style=" ">
 
             <div class="form-group">
@@ -48,13 +48,15 @@ require 'head.html';
         <span class="circled">FR</span>
         <span class="circled">i</span>
     </div>
+
     <style>
-.form-group .fa-times-circle{
-    cursor: pointer;
-}
-.form-group .fa-times-circle:hover{
-    color: white;
-}
+
+        .form-group .fa-times-circle{
+            cursor: pointer;
+        }
+        .form-group .fa-times-circle:hover{
+            color: white;
+        }
         .footer{
             position: absolute;
             bottom: 15pt;

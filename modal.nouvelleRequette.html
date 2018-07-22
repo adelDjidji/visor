@@ -8,6 +8,7 @@
         });
     });
 </script>
+<link rel="stylesheet" href="assets/css/style-modal-requette.css">
 <div class="modal animated fadeInDown" id="adel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -21,102 +22,24 @@
             <div class="modal-body">
                     <input class="form-control form-control-lg" type="text" placeholder="Nouvelle requete" id="inputLarge">
 
-
-
-                <style>
-        input  {
-            color: white !important;
-        }
-        ::placeholder{
-            color: gray !important;
-            opacity: 1;
-        }
-
-                    #flip {
-                        padding: 0;
-                        text-align: center;
-                        display: flex;
-                        border-bottom: solid 1px #c3c3c3;
-                        margin-top: 18pt;
-                        cursor: pointer;
-                    }
-                    #flip:hover p{
-                        color: white;
-                        font-size: 11pt;
-
-                    }
-                    #flip>i{
-                        position: absolute;
-                        right: 22pt;
-                    }
-                    #flip>p{
-                        font-size: 11pt;
-                        color: gray;
-                    }
-                    #flip.active>i{
-                        color: var(--orange-1);
-                        font-size: 13pt;
-                        transition: all ease 0.3s;
-                    }
-                    #flip.active>p{
-                        color:white;
-                    }
-                    #panel1 {
-                        padding: 18px 12pt;
-                        margin-bottom: 0px;
-                        display: none;
-                    }
-        .custom-radio .custom-control-input:checked ~ .custom-control-label{
-            color: var(--orange-1);
-        }
-                    /*override radio button style*/
-                    .custom-control-input:checked ~ .custom-control-label::before {
-                        border-color: var(--orange-1) !important;
-                    }
-                    .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-                        filter: var(--fill-orange);
-                    }
-                    .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-                        background-color: transparent !important;
-                    }
-                    .custom-control-label::before {
-                        background-color: transparent !important;
-                        border-color:var(--orange-1) !important;
-                    }
-                    /* End overiding radio button*/
-
-                    li.panel-item{
-                        list-style: none;
-                        margin-bottom: 11pt;
-                        border-bottom: solid 1px var(--gray);
-                        color: white;
-                        padding-bottom: 6pt;
-                    }
-        li.panel-item:hover{
-            /*color: var(--orange-1);*/
-        }
-                </style>
-
-
-
-                <div id="flip">
-                    <p>Affchage</p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <ul id="panel1">
-                    <li class="panel-item">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                        <div id="flip">
+                            <p>Affchage</p>
+                            <i class="fas fa-chevron-down"></i>
                         </div>
-                    </li>
-                    <li class="panel-item">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked="">
-                            <label class="custom-control-label" for="customRadio2">Toggle this custom radio</label>
-                        </div>
-                    </li>
-                </ul>
+                        <ul id="panel1">
+                            <li class="panel-item">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                                </div>
+                            </li>
+                            <li class="panel-item">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked="">
+                                    <label class="custom-control-label" for="customRadio2">Toggle this custom radio</label>
+                                </div>
+                            </li>
+                        </ul>
 
 
             </div>
@@ -124,41 +47,3 @@
           </div>
         </div>
       </div>
-
-      <style>
-          .modal-content{
-            color: var(--gray-1);
-          }
-
-            .modal-header{
-                padding: 7px 11pt;
-                background-color: var(--gray-2);
-                border-color: gray;
-                border-radius: 0;
-            }
-            .modal-header>a{
-                color: var(--gray-1);
-                text-decoration: none;
-                font-size: 12pt;
-            }
-            .modal-title{
-                color: white;
-            }
-            .modal-header a:last-child{
-                color: var(--orange-1);
-                font-size: 12pt;
-            }
-
-.modal-body{
-    background-color:  #3a3e46;
-}
-::-moz-placeholder,::placeholder, :-ms-input-placeholder,::-webkit-input-placeholder{
-    color: red !important;
-    opacity: 1 !important;
-}
-          input:focus{
-              border-bottom: red;
-              box-shadow: red;
-              outline: red;
-          }
-      </style>
