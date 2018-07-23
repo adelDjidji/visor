@@ -10,7 +10,11 @@
             <input class="ronded-input" type="text" placeholder="Rechercher" name="recherche_inner" id="">
         </div>
 
+<<<<<<< HEAD
+        <li class="nav-item">
+=======
         <li class="nav-item ">
+>>>>>>> 9be62340a60080bddbc75adee01b768e10c55acf
             <a class="nav-link" href="actualite.php">
                 <img class="icon" src="assets/icons/list.svg" alt="image no valide">
                 <span class="txt b">Flux d'actualité  </span>
@@ -167,11 +171,36 @@
         bodycontent.style.maxWidth="unset";
         bodycontent.style.flex="unset";
     }
-    function open(){
+    function close_left_bar(){
+        //hide right bar
+        var leftbar =document.getElementsByClassName('left-bar')[0];
+        leftbar.style.flex='0';
+        leftbar.style.overflow="hidden";
+        leftbar.style.width="0px";
 
+        var bodycontent =document.getElementsByClassName('body-content-top')[0];
+        bodycontent.style.maxWidth="100%";
+        bodycontent.style.flex="1";
+    }
+    function open_left_bar() {
+        var leftbar =document.getElementsByClassName('left-bar')[0];
+        leftbar.style.flex='unset';
+        leftbar.style.overflow="auto";
+        leftbar.style.width="100%";
+
+        var bodycontent =document.getElementsByClassName('body-content-top')[0];
+        bodycontent.style.maxWidth="unset";
+        bodycontent.style.flex="unset";
+    }
+    function open(){
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
-        close_right_bar();
+        if ($(".right-bar")[0]){
+            close_right_bar();
+        } else {
+            close_left_bar();
+        }
+        
 
         //$('.right-bar').animate({"overflow": "hidden","width": "0px","flex": "0"});
         //$('.body-content-top').animate({"max-width": "100%","flex": "1"});
@@ -181,6 +210,10 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
-        open_right_bar();
+        if ($(".right-bar")[0]){
+            open_right_bar();
+        } else {
+            open_left_bar();
+        }
     }
 </script>

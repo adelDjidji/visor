@@ -2,8 +2,10 @@
 <!-- Les script javasript -->
 
 <script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
 
-
+<script src="assets/js/scriptAlphabetTable.js"></script>
 
 <script>
 
@@ -12,6 +14,13 @@ $(document).ready(function() {
     paging: false,
     searching: false
 });
+
+$('#table-dyn').DataTable({
+    paging: false,
+    searching: false,
+
+});
+} );
 
 
 
@@ -30,6 +39,7 @@ var items = document.getElementsByClassName('circled');
 var i=0;
 var l;
 //console.log(items);
+
 for(i=0; i<items.length; i++){
 l = items[i].innerText.length;
 
