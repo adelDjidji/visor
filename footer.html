@@ -23,13 +23,32 @@ $('#table-dyn').DataTable({
 } );
 
 
-//$('.navbar').find(".nav-item")[index_menu].addCladd('active');
+
 $('.navbar').find(".nav-item")[index_menu].setAttribute('class',"nav-item active");
 $('.sidenav').find(".nav-item")[index_menu-1].setAttribute('class',"nav-item active");
 
-var titres = ["Flux d'actualité","Synoptique","Groupes & Utilisateurs","plannification","paramètres"];
-document.getElementById('titre').innerText = titres[index_menu-1];
-//$('.navbar .col-lg-2').find("span")[index_menu].setAttribute('class',"txt-org b");
+
+
+var titres = ["Flux d'actualité","Synoptique","Groupes & Utilisateurs","planniification","paramètres"];
+document.getElementById('titre').innerText = titres[index_menu - 1];
+
+/*
+    function update circled items dynamicly while loading the page.
+*/
+var items = document.getElementsByClassName('circled');
+var i=0;
+var l;
+//console.log(items);
+
+for(i=0; i<items.length; i++){
+l = items[i].innerText.length;
+
+if(l==2) items[i].style.padding='6px 5pt';
+else if(l==3) items[i].style.padding='7px 2pt';
+
+}
+
+} );
 
 
 

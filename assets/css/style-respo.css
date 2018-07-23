@@ -1,6 +1,6 @@
 
 /* apply on tablette mode*/
-@media (max-width: 990px) {
+@media (max-width: 990px) and (min-width:450px) {
     .sm-hid{
         display: none;
     }
@@ -21,6 +21,9 @@
     .name-block .description {
         margin: 15px !important;
     }
+    .center-login{
+        margin-top: 12% !important;
+    }
 }
 
 /* just on web mode */
@@ -38,6 +41,52 @@
     }
     #main{
         margin-left: 0;
+    }
+}
+/* mode smartPhone */
+@media (min-width: 450px)  {
+    .center-login{
+        margin-top: 12% !important;
+    }
+
+
+ }
+
+@media (max-width:450px){
+ .xs-hid{
+     display: none;
+ }
+ .right-bar{
+display: none;
+ }
+    .btn{
+        padding: 5pt 16pt !important;
+    }
+    .btn.rond {
+        background-color: transparent !important;
+        border-radius: 50%;
+        width: 22pt;
+        padding: 0px !important;
+        font-size: 24pt;
+        line-height: 0.9;
+        font-weight: 200;
+        font-family: myria;
+        border-color: var(--orange-1);
+    }
+    .head{
+        padding: 16pt !important;
+        padding-left: 4pt !important;
+    }
+    img.download {
+        cursor: pointer;
+        margin-left: 26pt;
+        width: 20pt;
+    }
+    .body-content-top .center {
+        padding: 0pt;
+    }
+    .panel{
+        padding: 2px 8pt !important;
     }
 }
 
