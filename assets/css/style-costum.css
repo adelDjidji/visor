@@ -29,7 +29,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 a.caret-down {
-    color: #7b7f89;
+    color: #7b7f89 !important;
 }
 .sidebar a {
     color: #c9cacc;
@@ -41,8 +41,8 @@ a.caret-down {
     padding: 12px 5px 12px 15px;
     display: block;
 }
- a.active{
-    color: #bd5916;
+a.active{
+    color: #bd5916 !important;
 }
 .sidebar a:hover {
     color: #bd5916;
@@ -179,6 +179,7 @@ li {
     margin-right: 15px !important;
 }
 .left-bar{
+    transition :all ease 0.10s;
     padding: 0;
     background-color: var(--gray-3);
     box-shadow: 2px 2px 8px black;
@@ -251,8 +252,9 @@ box-shadow: unset;
 }
 .name-block .username {
     font-family: "myriad";
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
+    color: var(--gray-1)
 }
 .name-block .username, .name-block .description, .user-block .comment {
     display: block;
@@ -279,7 +281,6 @@ element.style {
     opacity: 1;
 }
 #modal-default.modal {
-    background: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
     right: 0;
@@ -291,6 +292,10 @@ element.style {
     -webkit-overflow-scrolling: touch;
     outline: 0;
 }
+#modal-defaut.modal .btn.btn-outline-primary {
+    color: var(--gray-1) !important;
+    border: 1pc solid var(--gray-1) !important;
+}
 .fade {
     opacity: 0;
     -webkit-transition: opacity .15s linear;
@@ -301,7 +306,7 @@ element.style {
     -webkit-transform: translate(0,0);
     -ms-transform: translate(0,0);
     -o-transform: translate(0,0);
-    transform: translate(+32%,+10%);
+    transform: translate(+20%,+10%);
 }
 .modal.fade .modal-dialog {
     -webkit-transition: -webkit-transform .3s ease-out;
@@ -313,13 +318,13 @@ element.style {
     transform: translate(0,-25%);
 }
 #modal-default .modal-dialog {
-    width: 580px !important;
+    width: 580px;
     margin: 30px auto;
-    max-width: 600px !important;
+    max-width: 600px;
 }
 .modal-content {
     position: relative;
-    background-color: var(--gray-2b);
+    background-color: #27292f;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     outline: 0;
@@ -341,6 +346,6 @@ element.style {
 .txt-gray-2{
     color: #7b7d89;
 }
-#table-dy.table{font-size:9pt;width:100%;max-width:100%;margin-bottom:1rem;color: #7b7d89 !important;background-color:transparent}
-#table-dy.table tbody+tbody{border-top:1px solid #4b4d54 !important}
-#table-dy.table thead th{font-family: "myriad-bold";font-size:10pt;vertical-align:bottom;border:0px;padding: 5px}
+.modal {
+    text-align: center;
+  }

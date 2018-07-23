@@ -8,6 +8,19 @@
         width: 50px !important;
         height: 50px !important;
     }
+    .modal.fade.in .modal-dialog {
+        transform: translate(+2%,+4%) !important;
+    }
+    .profile-block{
+        margin-top: 50px;
+        padding-top: 20px;
+    }
+    .name-block .username {
+        margin: 15px !important;
+    }
+    .name-block .description {
+        margin: 15px !important;
+    }
 }
 
 /* just on web mode */

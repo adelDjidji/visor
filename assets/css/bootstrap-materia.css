@@ -1677,6 +1677,7 @@ pre code {
   margin-bottom: 1rem;
   background-color: transparent;
   color: #c9cacc;
+  text-align: left;
 }
 
 .table th,
@@ -1692,7 +1693,8 @@ pre code {
   font-size:12pt;
   vertical-align:bottom;
   border:0px;
-  padding: 5px
+  padding: 5px;
+  text-align: left;
 }
 
 .table tbody + tbody {

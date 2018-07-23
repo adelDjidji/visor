@@ -1,0 +1,41 @@
+div.alphabet {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-bottom: 1em;
+    color: #c9cacc;
+}
+
+div.alphabet span {
+    display: table-cell;
+    color: #ff6541;
+    cursor: pointer;
+    text-align: center;
+    width: 3.5%
+}
+
+div.alphabet span:hover {
+    text-decoration: underline;
+    color: #a94d3a;
+}
+
+div.alphabet span.active {
+    color: #ff6541;
+}
+
+div.alphabet span.empty {
+    color: #4b4d54;
+}
+
+div.alphabetInfo {
+    display: block;
+    position: absolute;
+    background-color: #111;
+    border-radius: 3px;
+    color: white;
+    top: 2em;
+    height: 1.8em;
+    padding-top: 0.4em;
+    text-align: center;
+    z-index: 1;
+}

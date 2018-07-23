@@ -1,9 +1,15 @@
+
+<!-- Format tablette -->
+
+
+
+<!-- Format web -->
 <div class="modal fade in" id="modal-default">
         <div class="modal-dialog">
           <div class="modal-content">
               <!-- Debut Conteneur des boutons -->
               <div class="row head-no-border">
-                  <div class="col-lg-8">
+                  <div class="col-lg-8 col-sm-6">
                       <div class="btn-group btn-group-toggle" data-toggle="buttons">
                       <label class="btn btn-outline-primary active small">
                               <input type="checkbox" autocomplete="off"> Informations
@@ -16,8 +22,8 @@
                           </label>
                       </div>
                   </div>
-                  <div class="col-lg-2"></div>
-                  <div class="col-lg-2">
+                  <div class="col-lg-2 col-sm-4"></div>
+                  <div class="col-lg-2 col-sm-2">
                       <button class="btn btn-outline-primary small">Modifier</button>
                   </div>
             </div>
@@ -25,22 +31,57 @@
             
             <!-- Début informations de la personne -->
             <div class="row head-no-border">
-                  <div class="col-lg-4"></div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-sm-0"></div>
+                  <div class="col-lg-4 col-sm-5">
                       <div class="profile-block">
                           <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
                       </div>
-                      <span class="username">
-                          <a href="#">Sophie Hones</a>
-                          <span class="description">Vauban system-security team</span>
-                      </span>
+                      <div class="sm-hid">
+                            <div class="name-block">
+                                    <span class="username">
+                                        <a href="#">Sophie Hones</a>
+                                    </span>
+                                    <span class="description">Vauban system - security team</span>
+                            </div>
+                      </div>
                   </div>   
-                  <div class="col-lg-4"></div>    
+                  <div class="col-lg-4 col-sm-7">
+                      <div class="hidden-lg">
+                                <div class="box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <th>
+                                                <div class="name-block">
+                                                    <span class="username">
+                                                        <a href="#">Sophie Hones</a>
+                                                    </span>
+                                                    <span class="description">Vauban system - security team</span>
+                                                </div>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="txt-org">Présence :</label><span class="txt-gray-c"> Indétérminée</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="txt-org">Dérnier passage :</label><span class="txt-gray-c"> 15/11/2015 - 9:48</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="txt-gray-c"><span> Identifiant 1 : 48151642</span></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="txt-gray-c"><span> Identifiant 2 : 48157678</span></div></td>
+                                            </tr>
+                                        <tbody>    
+                                    </table>
+                                  </div>
+                            </div>
+                  </div>    
             </div>
             <!-- Fin informations de la personne -->
             
             <!-- Début informations sur le passage -->
-            <div class="row head-no-border">
+            <div class="row head-no-border sm-hid">
                   <div class="col-lg-4"><label class="txt-org">Présence :</label><span class="txt-gray-c"> Indétérminée</span></div>
                   <div class="col-lg-2"></div>
                   <div class="col-lg-6"><label class="txt-org">Dérnier passage :</label><span class="txt-gray-c"> 15/11/2015 - 9:48</span></div>
@@ -51,13 +92,13 @@
             <div class="head-no-border">
                 <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
+                        <thead>
+                            <th>
+                               <div class="txt-gray-2"><span> AUTORISATIONS</span></div>
+                            </th>
+                        </thead>
                         <tbody>
-                            <tr>
-                                <td><div class="txt-gray-c"><span> Identifiant 1 : 48151642</span></div></td>
-                            </tr>
-                            <tr>
-                                <td><div class="txt-gray-c"><span> AUTORISATIONS</span></div></td>
-                            </tr>
+                            
                             <tr>
                                 <td><div class="txt-gray-c"><span> Statut : autorisé</span></div></td>
                             </tr>

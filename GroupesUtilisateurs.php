@@ -41,16 +41,17 @@ phpinfo();*/
         <!--Fin head -->
         <div class="row center-no-img">
             <div class="box-body table-responsive no-padding">
-                <table id="table-dynam" class="table table-hover">
+                <table id="table-alphabet" class="table table-hover">
                     
                         <thead>
                             <tr>
-                                <th><img class="sm-hid" src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Nom</label> <a class="caret-down" href="#"><i class= "fa fa-caret-down"></i></a></th>
-                                <th><img class="sm-hid" src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Pèsence</label><a class="caret-down" href="#"><i class= "fa fa-caret-down"></i></a></th>
-                                <th class="sm-hid"><img src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Dérnier passage le</label><a class="caret-down" href="#"><i class= "fa fa-caret-down"></i></a></th>
-                                <th class="sm-hid"><img src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Identifiant</label><a class="caret-down" href="#"><i class= "fa fa-caret-down"></i></a></th>
+                                <th><img class="sm-hid" src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Nom</label></th>
+                                <th><img class="sm-hid" src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Pèsence</label></th>
+                                <th class="sm-hid"><img src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Dérnier passage le</label></th>
+                                <th class="sm-hid"><img src="assets/icons/thead.png" alt="image no valide"><label class="sepa">Identifiant</label></th>
                             </tr>
                         </thead>
+                        
                         <tbody>
                         <tr>
                             <td><div class="txt-gray-2"><i class="fa fa-circle"></i><span>       A</span></div></td>
@@ -58,7 +59,7 @@ phpinfo();*/
                             <td class="sm-hid"></td>
                             <td class="sm-hid"></td>
                         </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
                                     <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -201,6 +202,7 @@ $(function(){
     });
 });
 </script>
+
 
 
 <?php
