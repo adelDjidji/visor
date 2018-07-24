@@ -1,79 +1,97 @@
 
+
+
+/* sass */
+$font_family_1: myria;
+$background_color_1: transparent;
+$border_color_1: var(--orange-1);
+
+$tablet_width_max: 990px;
+$tablet_width_min: 450px;
+
 /* apply on tablette mode*/
-@media (max-width: 990px) and (min-width:450px) {
-    .sm-hid{
+
+@media (max-width: $tablet_width_max) and (min-width:$tablet_width_min) {
+    .sm-hid {
         display: none;
     }
-    .btn-outline-primary.circle{
+    .btn-outline-primary.circle {
         width: 50px !important;
         height: 50px !important;
     }
-    .modal.fade.in .modal-dialog {
+    .modal.fade.in {
+    .modal-dialog {
         transform: translate(+2%,+4%) !important;
     }
-    .profile-block{
-        margin-top: 50px;
-        padding-top: 20px;
-    }
-    .name-block .username {
-        margin: 15px !important;
-    }
-    .name-block .description {
-        margin: 15px !important;
-    }
-    .center-login{
-        margin-top: 12% !important;
-    }
+}
+.profile-block {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.name-block {
+.username {
+    margin: 15px !important;
+}
+.description {
+    margin: 15px !important;
+}
+}
+.center-login {
+    margin-top: 12% !important;
+}
 }
 
+
 /* just on web mode */
-@media (min-width: 990px){
-    .hidden-lg{
+@media (min-width: $tablet_width_max) {
+    .hidden-lg {
         display: none;
     }
-
-    .center-login{
+    .center-login {
         margin-top: 12% !important;
     }
-
-    .mySidenav{
-        width: 0 ;
+    .mySidenav {
+        width: 0;
     }
-    #main{
+    #main {
         margin-left: 0;
     }
 }
+
+
+
+
+
+
 /* mode smartPhone */
-@media (min-width: 450px)  {
-    .center-login{
+@media (min-width: $tablet_width_min) {
+    .center-login {
         margin-top: 12% !important;
     }
-
-
- }
-
-@media (max-width:450px){
- .xs-hid{
-     display: none;
- }
- .right-bar{
-display: none;
- }
-    .btn{
+}
+/* mode smartPhone */
+@media (max-width:$tablet_width_min) {
+    .xs-hid {
+        display: none;
+    }
+    .right-bar {
+        display: none;
+    }
+    .btn {
         padding: 5pt 16pt !important;
     }
     .btn.rond {
-        background-color: transparent !important;
+        background-color: $background_color_1 !important;
         border-radius: 50%;
         width: 22pt;
         padding: 0px !important;
         font-size: 24pt;
         line-height: 0.9;
         font-weight: 200;
-        font-family: myria;
-        border-color: var(--orange-1);
+        font-family: $font_family_1;
+        border-color: $border_color_1;
     }
-    .head{
+    .head {
         padding: 16pt !important;
         padding-left: 4pt !important;
     }
@@ -82,14 +100,12 @@ display: none;
         margin-left: 26pt;
         width: 20pt;
     }
-    .body-content-top .center {
-        padding: 0pt;
+    .body-content-top {
+        .center {
+            padding: 0pt;
+        }
     }
-    .panel{
+    .panel {
         padding: 2px 8pt !important;
     }
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
 }
