@@ -224,6 +224,18 @@ box-shadow: unset;
     font-family: "myriad";
     line-height: 1.1;
 }
+.btn-outline-primary.profile-img{
+    border-radius: 50%;
+    height: 100%;
+    background: transparent;
+    width: 100%;
+    font-size: 12pt;
+    padding: 0px !important;
+    font-family: "myriad";
+    line-height: 1.1;
+    border-width: 3px;
+    border-color: var(--gray-1);
+}
 .btn-outline-primary.circle:hover{
     color:#fff;
     background-color:#DF691A;
@@ -237,7 +249,7 @@ box-shadow: unset;
     height: 40px;
     float: left;
 }
-.profile-block img {
+.profile-block {
     width: 150px;
     height: 150px;
     float: center;
@@ -246,6 +258,8 @@ box-shadow: unset;
 .img-bordered-sm {
     border: 2px solid var(--gray-1);
     padding: 2px;
+    width: 150px;
+    height: 150px;
 }
 .img-circle {
     border-radius: 50%;

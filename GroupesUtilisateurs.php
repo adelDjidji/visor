@@ -30,7 +30,7 @@ phpinfo();*/
     <div class="col-lg-9 body-content-top">
         <div class="row head-no-border">
                 <div class="col-lg-8 col-sm-5">
-                    <button type="submit" class="btn btn-outline-primary circle">+</button> <span class="header">Nouvel utilisateur</span>
+                    <button class="btn btn-outline-primary circle" data-toggle="modal" data-target="#ajoutFiche">+</button> <span class="header">Nouvel utilisateur</span>
                 </div>
                 <div class="col-lg-2 col-sm-3">
                 </div>
@@ -53,12 +53,6 @@ phpinfo();*/
                         </thead>
                         
                         <tbody>
-                        <tr>
-                            <td><div class="txt-gray-2"><i class="fa fa-circle"></i><span>       A</span></div></td>
-                            <td></td>
-                            <td class="sm-hid"></td>
-                            <td class="sm-hid"></td>
-                        </tr>
                         <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
@@ -73,7 +67,7 @@ phpinfo();*/
                                 <td class="sm-hid">11/7/2014 - 09:17:32</td>
                                 <td class="sm-hid">48151623</td>
                         </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                         <td>
                             <div class="name-block">
                                 <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -87,7 +81,7 @@ phpinfo();*/
                         <td class="sm-hid">11/7/2014 - 09:17:32</td>
                         <td class="sm-hid">48151623</td>
                         </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                         <td>
                             <div class="name-block">
                                 <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -101,7 +95,7 @@ phpinfo();*/
                         <td class="sm-hid">11/7/2014 - 09:17:32</td>
                         <td class="sm-hid">48151623</td>
                         </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
                                     <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -115,13 +109,7 @@ phpinfo();*/
                             <td class="sm-hid">11/7/2014 - 09:17:32</td>
                             <td class="sm-hid">48151623</td>
                         </tr>
-                        <tr>
-                            <td><div class="txt-gray-2"><i class="fa fa-circle"></i><span>       B</span></div></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
                                     <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -135,7 +123,7 @@ phpinfo();*/
                             <td class="sm-hid">11/7/2014 - 09:17:32</td>
                             <td class="sm-hid">48151623</td>
                         </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
                                     <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -149,7 +137,7 @@ phpinfo();*/
                             <td class="sm-hid">11/7/2014 - 09:17:32</td>
                             <td class="sm-hid">48151623</td>
                         </tr>   
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
                                     <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -163,7 +151,7 @@ phpinfo();*/
                             <td class="sm-hid">11/7/2014 - 09:17:32</td>
                             <td class="sm-hid">48151623</td>
                         </tr>
-                        <tr data-toggle="modal" data-id="1" data-target="#modal-default">
+                        <tr data-toggle="modal" data-target="#modal-default">
                             <td>
                                 <div class="name-block">
                                     <img class="img-circle img-bordered-sm" src="assets/images/user.jpg" alt="user image">
@@ -187,7 +175,7 @@ phpinfo();*/
     </div>
     <!-- /fin .right-bar -->
 </div>
-
+<!--
 <script>
 $(function(){
     $('#modal-default').modal({
@@ -206,7 +194,8 @@ $(function(){
 
 
 <?php
-
+include 'modal.ajoutFicheContactG.html';
+include 'modal.ajoutFicheContact.html';
 include 'modal.ficheContact.html';
 include 'footer.html';
 ?>
