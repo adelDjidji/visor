@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77d13ef0-63b4-41a1-a8fb-bfe5c56b4673" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/actualite.php" beforeDir="false" afterPath="$PROJECT_DIR$/actualite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modal.nouvelleRequette.html" beforeDir="false" afterPath="$PROJECT_DIR$/modal.nouvelleRequette.html" afterDir="false" />
-    </list>
+    <list default="true" id="77d13ef0-63b4-41a1-a8fb-bfe5c56b4673" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style-respo.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style-respo.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style-respo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="1071">
+              <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -50,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actualite.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="actualite.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/actualite.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="269" column="18" selection-start-line="264" selection-start-column="18" selection-end-line="269" selection-end-column="18" />
+            <state relative-caret-position="246">
+              <caret line="275" column="14" lean-forward="true" selection-start-line="275" selection-start-column="14" selection-end-line="275" selection-end-column="14" />
               <folding>
                 <element signature="e#780#806#0#HTML" expanded="true" />
               </folding>
@@ -225,7 +222,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dashboard/vtigercrm" />
+    <property name="last_opened_file_path" value="C:/wamp64/www/space_craft" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -259,7 +256,7 @@
       <workItem from="1531993979572" duration="1661000" />
       <workItem from="1532118316762" duration="805000" />
       <workItem from="1532171019620" duration="597000" />
-      <workItem from="1532256178897" duration="11761000" />
+      <workItem from="1532256178897" duration="13746000" />
     </task>
     <task id="LOCAL-00001" summary="sidebar Done + index menu works">
       <created>1531751182837</created>
@@ -272,13 +269,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61938000" />
+    <option name="totallyTimeSpent" value="63923000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988764" visible="true" weight="0.26928896" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988764" visible="true" weight="0.26928896" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -287,7 +284,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2647059" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" sideWeight="0.5011236" side_tool="true" weight="0.25718608" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.13071896" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33496732" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -688,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style-respo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -711,11 +701,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/actualite.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="269" column="18" selection-start-line="264" selection-start-column="18" selection-end-line="269" selection-end-column="18" />
+        <state relative-caret-position="246">
+          <caret line="275" column="14" lean-forward="true" selection-start-line="275" selection-start-column="14" selection-end-line="275" selection-end-column="14" />
           <folding>
             <element signature="e#780#806#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style-respo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
         </state>
       </provider>
     </entry>
